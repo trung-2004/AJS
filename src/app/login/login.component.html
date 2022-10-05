@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<style>
+  .login{
+    width: 500px;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    padding: 30px 50px;
+  }
+  .login__header{
+    width: 100%;
+    min-height: 60px;
+
+  }
+  .login__om{
+    min-height: 40px;
+    border-radius: 20px;
+    margin: 30px 95px;
+    width: 50%;
+    box-shadow: 0 0 10px orange;
+    display: flex;
+    justify-content: space-between;
+  }
+  .login__login,
+  .login__register{
+    text-align: center;
+    line-height: 40px;
+    width: 50%;
+    border: orange 1px solid;
+    border-radius: 20px;
+  }
+  .login__login{
+    background-color: orange;
+  }
+  .login__register{
+    border: none;
+    background-color: #fafafa;
+  }
+  .login__form{
+
+  }
+  .login__form-id,
+  .login__form-pas {
+    width: 100%;
+    margin-top: 12px;
+    height: 36px;
+    border: none;
+    border-bottom: 2px solid #888;
+  }
+  .login__form-chek{
+    margin: 32px 0;
+  }
+  .login_btn{
+    display: flex;
+  }
+  .login_btn-login{
+    margin: auto;
+    min-width: 250px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    height: 40px;
+    background-color: orange;
+    border-bottom: 30px;
+  }
+</style>
+<body>
+<section class="section main">
+  <div class="container">
+    <div class="login">
+
+      <header class="login__header">
+        <div class="login__om">
+          <div class="login__login"><a href="#">Log In</a></div>
+          <div class="login__register"><a href="#">Register</a></div>
+        </div>
+      </header>
+      <form method="get" action="#" class="login__form" >
+        <input type="text" placeholder="User ID" required class="login__form-id"/>
+        <input type="password" placeholder="Enter Password" required class="login__form-pas"/>
+        <label class="login__form-chek">
+          <input type="checkbox" name="confirn" />
+          Remember Password
+        </label>
+        <div class="login_btn">
+          <button class="login_btn-login" type="submit">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</body>
+</html>
